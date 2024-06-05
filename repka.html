@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrvatska Reprezentacija</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content, .section {
+            padding-top: 60px;
+        }
+        .section {
+            padding: 60px 20px;
+            display: none;
+        }
+        .matches-section h2, .players-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .match, .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .match img, .player img {
+            width: 20px;
+            height: 15px;
+            margin-left: 10px;
+        }
+        .match-team, .player-team {
+            display: flex;
+            align-items: center;
+        }
+        .match-result {
+            font-weight: bold;
+            text-align-last: center;
+        }
+        .player-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .player-table th, .player-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .player-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+
+    <script>
+        function loadXMLDoc(filename) {
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xhttp.open("GET", filename, false);
+            xhttp.send();
+            return xhttp.responseXML;
+        }
+    
+        function displayPlayers() {
+            var xmlDoc = loadXMLDoc("players.xml"); 
+            var players = xmlDoc.getElementsByTagName("player");
+    
+            var playerTable = '<table class="player-table">';
+            playerTable += '<thead>';
+            playerTable += '<tr>';
+            playerTable += '<th>Broj</th>';
+            playerTable += '<th>Ime</th>';
+            playerTable += '<th>Prezime</th>';
+            playerTable += '<th>Datum rođenja</th>';
+            playerTable += '<th>Pozicija</th>';
+            playerTable += '<th>Klub</th>';
+            playerTable += '<th>Broj utakmica</th>';
+            playerTable += '<th>Broj golova</th>';
+            playerTable += '</tr>';
+            playerTable += '</thead>';
+            playerTable += '<tbody>';
+    
+            for (var i = 0; i < players.length; i++) {
+                playerTable += '<tr>';
+                playerTable += '<td>' + players[i].getAttribute("number") + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("surname")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("date")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("position")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("club")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("games")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '<td>' + players[i].getElementsByTagName("goals")[0].childNodes[0].nodeValue + '</td>';
+                playerTable += '</tr>';
+            }
+    
+            playerTable += '</tbody>';
+            playerTable += '</table>';
+    
+            document.getElementById("player-table-container").innerHTML = playerTable;    
+        }
+    
+        displayPlayers();
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#orepki">O repki</a>
+        <a href="#players">Popis igrača</a>
+        <a href="#matches">Utakmice</a>
+        <a href="#contact">Kontakt</a>
+    </div>
+
+    <div id="orepki" class="content" style="text-align: center; padding: 50px 0;">
+        <h2>Dobrodošli na stranicu Hrvatske reprezentacije!</h2>
+        <img src="Slike/repka.jpg" alt="Hrvatska reprezentacija" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+
+        <p>Hrvatska nogometna reprezentacija predstavlja Republiku Hrvatsku u nogometu. Svjetska nogometna federacija (FIFA) službeno ju je priznala 17. srpnja 1941. godine. Reprezentacija istog imena u prošlosti je predstavljala Banovinu Hrvatsku i Nezavisnu Državu Hrvatsku u devetnaest prijateljskih utakmica odigranih između 1940. i 1944. godine. Poslije Drugoga svjetskog rata igrači iz Hrvatske nastupali su u jugoslavenskoj nogometnoj reprezentaciji sve do 1990. i raspada SFRJ. U tom je razdoblju reprezentacija Hrvatske, iako je Hrvatska bila sastavnica Jugoslavije, odigrala jednu međunarodnu prijateljsku utakmicu protiv Indonezije u Zagrebu 1956. Nakon razdruženja od Jugoslavije, Hrvatskoj je potvrđeno članstvo u FIFA-i 3. srpnja 1992. godine. U Europsku nogometnu organizaciju (UEFA) Hrvatska je primljena u punopravno članstvo 17. lipnja 1993. godine, tako da je UEFA Euro '96 prvo međunarodno natjecanje na koje je reprezentacija stekla pravo sudjelovanja kroz kvalifikacije, a potom i u završnici u Engleskoj. Svoj prvi javni nastup na svjetskim prvenstvima Hrvatska je ostvarila 1998. godine u Francuskoj gdje je završila na trećem mjestu, a hrvatski reprezentativac Davor Šuker postao najboljim strijelcem prvenstva. Otkad su joj odobrena nastupanja na velikim nogometnim natjecanjima, Hrvatska je propustila samo jedno svjetsko (2010.) i jedno europsko prvenstvo (2000.).
+            
+            Zbog rezultata 1994. i 1998. godine reprezentacija je od Fife dobila dva priznanja (Mover of the Year).Kada je FIFA u prosincu 1992. počela objavljivati ovu tablicu, Hrvatska je zauzela 125. mjesto na svijetu. Nakon Svjetskog nogometnog prvenstva 1998. godine u Francuskoj, Hrvatska se popela na treće mjesto ljestvice, ostvarivši time najveći napredak u povijesti Fifine ljestvice.
+            
+            Hrvatska je od svoje neovisnosti po broju osvojenih odličja na svjetskim nogometnim prvenstvima, odmah iza Francuske i Njemačke, treća po uspješnosti među državama svijeta.</p>
+    </div>
+    <div id="players" class="section">
+        <h2>Popis igrača</h2>
+        <div id="player-table-container"></div>
+    </div>
+    <div id="matches" class="section matches-section">
+        <h2>Sljedeće utakmice</h2>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">vs</div>
+            <div class="match-team"><img src="Slike/por.png" alt="Opponent1"> Portugal</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result"> vs</div>
+            <div class="match-team"><img src="Slike/spa.png" alt="Opponent2"> Španjolska</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">vs</div>
+            <div class="match-team"><img src="Slike/alb.png" alt="Opponent3"> Albanija</div>
+        </div>
+        
+        <h2>Zadnjih 5 odigranih utakmica</h2>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">   3 - 0</div>
+            <div class="match-team"><img src="Slike/mak.png" alt="Opponent4"> Makedonija</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result"> 2 - 4</div>
+            <div class="match-team"><img src="Slike/egi.png" alt="Opponent5"> Egipat</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">0 - 0</div>
+            <div class="match-team"><img src="Slike/tun.png" alt="Opponent6"> Tunis</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">  1 - 0</div>
+            <div class="match-team"><img src="Slike/arm.png" alt="Opponent7"> Armenija</div>
+        </div>
+        <div class="match">
+            <div class="match-team">Hrvatska <img src="Slike/hrv.png" alt="HR"></div>
+            <div class="match-result">2 - 0</div>
+            <div class="match-team"><img src="Slike/lat.png" alt="Opponent8"> Latvija</div>
+        </div>
+    </div>
+    <div id="contact" class="section">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <p>Ime: Leonardo</p>
+            <p>Prezime: Jantoljak</p>
+            <p>Email: ljantolja@tvz.hr</p>
+            <p>Broj mobitela: 091 922 5699</p>
+        </div>
+        <div class="contact-form">
+            <h3>Pošaljite povratnu informaciju</h3>
+            <form>
+                <label for="name">Ime:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Poruka:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Pošalji">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelectorAll('.section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                document.querySelector('.content').style.display = 'none';
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });  
+    </script>
+</body>
+</html>

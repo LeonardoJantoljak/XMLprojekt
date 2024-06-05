@@ -1,0 +1,290 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<players>
+    <player number="1">
+            <name>Dominik</name>
+            <surname>Livaković</surname>
+            <date>09-01-1995</date>
+            <position>Golman</position>
+            <club>Fenerbahce (TUR)</club>
+            <statistics>
+                <games>52</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="2">
+            <name>Josip</name>
+            <surname>Stanišić</surname>
+            <date>02-04-2000</date>
+            <position>Branič</position>
+            <club>Bayer Leverkusen (GER)</club>
+            <statistics>
+                <games>17</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="3">
+            <name>Marin</name>
+            <surname>Pongračić</surname>
+            <date>11-09-1997</date>
+            <position>Branič</position>
+            <club>Lecce (ITA)</club>
+            <statistics>
+                <games>6</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="4">
+            <name>Joško</name>
+            <surname>Gvardiol</surname>
+            <date>23-01-2002</date>
+            <position>Branič</position>
+            <club>Manchester City (ENG)</club>
+            <statistics>
+                <games>29</games>
+                <goals>2</goals>
+            </statistics>
+        </player>
+        <player number="5">
+            <name>Martin</name>
+            <surname>Erlić</surname>
+            <date>24-01-1998</date>
+            <position>Branič</position>
+            <club>Sassuolo (ITA)</club>
+            <statistics>
+                <games>8</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="6">
+            <name>Josip</name>
+            <surname>Šutalo</surname>
+            <date>28-02-2002</date>
+            <position>Branič</position>
+            <club>Ajax (NED)</club>
+            <statistics>
+                <games>13</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="7">
+            <name>Lovro</name>
+            <surname>Majer</surname>
+            <date>17-01-1998</date>
+            <position>Vezni</position>
+            <club>Wolfsburg (GER)</club>
+            <statistics>
+                <games>29</games>
+                <goals>8</goals>
+            </statistics>
+        </player>
+        <player number="8">
+            <name>Mateo</name>
+            <surname>Kovačić</surname>
+            <date>06-05-1994</date>
+            <position>Vezni</position>
+            <club>Manchester City (ENG)</club>
+            <statistics>
+                <games>99</games>
+                <goals>5</goals>
+            </statistics>
+        </player>
+        <player number="9">
+            <name>Andrej</name>
+            <surname>Kramarić</surname>
+            <date>19-06-1991</date>
+            <position>Napadač</position>
+            <club>Hoffenheim (GER)</club>
+            <statistics>
+                <games>91</games>
+                <goals>28</goals>
+            </statistics>
+        </player>
+        <player number="10">
+            <name>Luka</name>
+            <surname>Modrić</surname>
+            <date>09-09-1985</date>
+            <position>Vezni</position>
+            <club>Real Madrid (ESP)</club>
+            <statistics>
+                <games>174</games>
+                <goals>24</goals>
+            </statistics>
+        </player>
+        <player number="11">
+            <name>Marcelo</name>
+            <surname>Brozović</surname>
+            <date>16-11-1992</date>
+            <position>Vezni</position>
+            <club>Al Nassr (KSA)</club>
+            <statistics>
+                <games>95</games>
+                <goals>7</goals>
+            </statistics>
+        </player>
+        <player number="12">
+            <name>Nediljko</name>
+            <surname>Labrović</surname>
+            <date>10-10-1999</date>
+            <position>Golman</position>
+            <club>Rijeka (CRO)</club>
+            <statistics>
+                <games>1</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="13">
+            <name>Nikola</name>
+            <surname>Vlašić</surname>
+            <date>04-10-1997</date>
+            <position>Vezni</position>
+            <club>Torino (ITA)</club>
+            <statistics>
+                <games>55</games>
+                <goals>8</goals>
+            </statistics>
+        </player>
+        <player number="14">
+            <name>Ivan</name>
+            <surname>Perišić</surname>
+            <date>02-02-1989</date>
+            <position>Napadač</position>
+            <club>Hajduk (CRO)</club>
+            <statistics>
+                <games>129</games>
+                <goals>33</goals>
+            </statistics>
+        </player>
+        <player number="15">
+            <name>Mario</name>
+            <surname>Pašalić</surname>
+            <date>09-02-1995</date>
+            <position>Vezni</position>
+            <club>Atalanta (ITA)</club>
+            <statistics>
+                <games>62</games>
+                <goals>10</goals>
+            </statistics>
+        </player>
+        <player number="16">
+            <name>Ante</name>
+            <surname>Budimir</surname>
+            <date>22-07-1991</date>
+            <position>Napadač</position>
+            <club>Osasuna (ESP)</club>
+            <statistics>
+                <games>19</games>
+                <goals>2</goals>
+            </statistics>
+        </player>
+        <player number="17">
+            <name>Bruno</name>
+            <surname>Petković</surname>
+            <date>16-09-1994</date>
+            <position>Napadač</position>
+            <club>Dinamo (CRO)</club>
+            <statistics>
+                <games>36</games>
+                <goals>11</goals>
+            </statistics>
+        </player>
+        <player number="18">
+            <name>Luka</name>
+            <surname>Ivanušec</surname>
+            <date>26-11-1998</date>
+            <position>Vezni</position>
+            <club>Feyenoord (NED)</club>
+            <statistics>
+                <games>19</games>
+                <goals>2</goals>
+            </statistics>
+        </player>
+        <player number="19">
+            <name>Borna</name>
+            <surname>Sosa</surname>
+            <date>21-01-1998</date>
+            <position>Branič</position>
+            <club>Ajax (NED)</club>
+            <statistics>
+                <games>19</games>
+                <goals>1</goals>
+            </statistics>
+        </player>
+        <player number="20">
+            <name>Marko</name>
+            <surname>Pjaca</surname>
+            <date>06-05-1995</date>
+            <position>Napadač</position>
+            <club>Rijeka (CRO)</club>
+            <statistics>
+                <games>25</games>
+                <goals>1</goals>
+            </statistics>
+        </player>
+        <player number="21">
+            <name>Domagoj</name>
+            <surname>Vida</surname>
+            <date>29-04-1989</date>
+            <position>Branič</position>
+            <club>AEK (GRE)</club>
+            <statistics>
+                <games>104</games>
+                <goals>4</goals>
+            </statistics>
+        </player>
+        <player number="22">
+            <name>Josip</name>
+            <surname>Juranović</surname>
+            <date>16-08-1995</date>
+            <position>Branič</position>
+            <club>Union Berlin (GER)</club>
+            <statistics>
+                <games>36</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="23">
+            <name>Ivica</name>
+            <surname>Ivušić</surname>
+            <date>01-02-1995</date>
+            <position>Golman</position>
+            <club>Pafos (CYP)</club>
+            <statistics>
+                <games>6</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="24">
+            <name>Marco</name>
+            <surname>Pašalić</surname>
+            <date>14-09-2000</date>
+            <position>Napadač</position>
+            <club>Rijeka (CRO)</club>
+            <statistics>
+                <games>5</games>
+                <goals>1</goals>
+            </statistics>
+        </player>
+        <player number="25">
+            <name>Luka</name>
+            <surname>Sučić</surname>
+            <date>08-09-2002</date>
+            <position>Vezni</position>
+            <club>RB Salzburg (AUT)</club>
+            <statistics>
+                <games>5</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+        <player number="26">
+            <name>Martin</name>
+            <surname>Baturina</surname>
+            <date>16-02-2003</date>
+            <position>Vezni</position>
+            <club>Dinamo (CRO)</club>
+            <statistics>
+                <games>2</games>
+                <goals>0</goals>
+            </statistics>
+        </player>
+</players>

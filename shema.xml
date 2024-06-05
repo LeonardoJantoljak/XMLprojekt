@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="players">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="player" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="surname" type="xs:string"/>
+              <xs:element name="date" type="xs:date"/>
+              <xs:element name="position" type="xs:string"/>
+              <xs:element name="club" type="xs:string"/>
+              <xs:element name="statistics">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="games" type="xs:integer"/>
+                    <xs:element name="goals" type="xs:integer"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="broj" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
